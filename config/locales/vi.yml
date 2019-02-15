@@ -1,6 +1,12 @@
 vi:
   application:
     title: "Noel"
+  header_admin:
+    link_logout: "Đăng xuất"
+    account_management: "Quản lý acc"
+    movie_management: "Quản lý phim"
+    add_movie: "Thêm phim"
+    add_episode: "Thêm tập phim"
   header:
     language: "Ngôn ngữ: "
     or: " hoặc "
@@ -48,3 +54,9 @@ vi:
     anime_series: "Anime dài tập"
     new_category: "Thể loại mới"
     anime_updated: "Anime mới cập nhật"
+  movie_detail:
+    kind: "Thể loại "
+    episodes: "Số tập"
+    projecting_date: "Ngày chiếu"
+    movie_link: "Xem phim"
+    status: "Trạng thái"

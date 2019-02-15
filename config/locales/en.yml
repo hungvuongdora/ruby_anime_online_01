@@ -1,6 +1,12 @@
 en:
   application:
     title: "Noel"
+  header_admin:
+    link_logout: "Log out"
+    account_management: "Acc manager"
+    movie_management: "Movie manager"
+    add_movie: "Add movie"
+    add_episode: "Add episode"
   header:
     language: "Language: "
     or: " or "
@@ -48,3 +54,9 @@ en:
     anime_series: "Anime series"
     new_category: "New category"
     anime_updated: "Anime updated"
+  movie_detail:
+    kind: "Kind"
+    episodes: "Episodes"
+    projecting_date: "Date"
+    movie_link: "Movie link"
+    status: "Status"
