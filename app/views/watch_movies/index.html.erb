@@ -1,0 +1,31 @@
+<% provide :title, @movie.name %>
+
+<div class="watch_movie_frame_1">
+  <div class="watch_movie_text">
+    <div class="watch_movie_text_2">
+      <%= link_to t("watch_movie.detail") + " | " + @movie.name + " | " + t("watch_movie.tap") + @showepisodes.name, movie_path(params[:id].to_i), class: "watch_movie_text_1" %>
+    </div>
+  </div>
+  <%= watch_movie(get_key_url_movie params[:id_episode]) %>
+  <div>
+  </div>
+</div>
+<div class="watch_movie_frame_3">
+  <div class="watch_movie_text_episodes">
+    <p><%= t "watch_movie.episodes" %></p>
+  </div>
+  <div class="watch_movie_button_episodes">
+    <% @episodes.each do |e|%>
+      <%= form_for watch_movies_path, url: watch_movies_path, method: :get do %>
+        <%= hidden_field_tag :id, params[:id] %>
+        <%= hidden_field_tag :id_episode, e.id %>
+        <%= button_tag t("watch_movie.tap") + e.name , type: "submit", name: nil, class: "watch_movie_buton" %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="watch_movie_block">
+  </div>
+</div>
+<div class="watch_movie_frame_2">
+
+</div>

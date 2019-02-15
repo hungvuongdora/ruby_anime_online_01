@@ -1,3 +1,4 @@
+
 en:
   application:
     title: "Noel"
@@ -58,6 +59,8 @@ en:
     movie_link: "Movie link"
     status: "Status"
     error: "Does not exist"
+    finish: "Finish"
+    unfinished: "Unfinished"
   login:
     log_in: "Login"
     user_name: "User name :"
@@ -77,3 +80,12 @@ en:
     admins:
       logged_in_admin:
         danger: "Please login"
+  movie_type:
+    error: "Does not exist"
+    type: "Movie type: "
+  movie_search:
+    search: "Search results: "
+  watch_movie:
+    episodes: "List of episodes server google: "
+    detail: "Watch information"
+    tap: "Tập "

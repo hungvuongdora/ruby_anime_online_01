@@ -4,7 +4,7 @@
   <div class="content_detail_left">
     <div class="content_detail_left_1">
       <div class="detail_frame_content1">
-        <%= image_tag @movie.images.sample.image, class: "logo_detail" %>
+        <%= link_to image_tag get_link_image(@movie.images.sample.image), class: "logo_detail" %>
       </div>
       <div class="detail_frame_content2">
         <p><%= @movie.name %></p>
@@ -40,15 +40,14 @@
             <%= t "movie_detail.projecting_date" %>
           </div>
           <div class="detail_text_kind">
-              <%= @movie.updated_at %>
+              <%= @movie.updated_at.day.to_s + "-" + @movie.updated_at.month.to_s + "-" +
+                @movie.updated_at.year.to_s %>
           </div>
         </div>
-        <%= link_to "#" do %>
-          <div class="detail_movie_link">
-            <div class="detail_text_movie_link">
-              <%= t "movie_detail.movie_link" %>
-            </div>
-          </div>
+        <%= form_for watch_movies_path, url: watch_movies_path, method: :get do %>
+          <%= hidden_field_tag :id, params[:id] %>
+          <%= hidden_field_tag :id_episode, @episodes.id %>
+          <%= button_tag t("movie_detail.movie_link"), type: "submit", name: nil, class: "detail_movie_link" %>
         <% end %>
       </div>
     </div>
