@@ -31,3 +31,15 @@ vi:
     vampire: "Ma cà rồng"
     add_movie: "Thêm phim"
     add_the_episode: "Thêm tập phim"
+    movie_management: "Quản lý phim"
+  home:
+    anime_new: "Anime mới"
+    see_more: "Xem thêm >>"
+    anime_series: "Anime dài tập"
+    new_category: "Thể loại mới"
+    anime_updated: "Anime mới cập nhật"
+  login:
+    log_in: "Đăng nhập"
+    user_name: "Tên đăng nhập :"
+    password: "Mật khẩu :"
+    save_password: "Lưu mật khẩu !!"

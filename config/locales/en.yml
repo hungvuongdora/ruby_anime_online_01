@@ -31,3 +31,15 @@ en:
     vampire: "Vampire"
     add_movie: "Add movie"
     add_the_episode: "Add the episode"
+    movie_management: "Movie manager"
+  home:
+    anime_new: "Anime new"
+    see_more: "See more >>"
+    anime_series: "Anime series"
+    new_category: "New category"
+    anime_updated: "Anime updated"
+  login:
+    log_in: "Login"
+    user_name: "User name :"
+    password: "Password :"
+    save_password: "Save Password !!"
